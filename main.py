@@ -1,12 +1,8 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-from fastapi import FastAPI
+import fastapi
 
-app= FastAPI()
+app= fastapi.FastAPI()
 
 @app.get("/")
 def read_root():
@@ -18,4 +14,4 @@ def read_root():
     return {"greeting": "Hello World"}
 
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
