@@ -8,5 +8,14 @@ from fastapi import FastAPI
 
 app= FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/hello")
+def hello_world():
+    return {"greeting": "Hello World"}
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
