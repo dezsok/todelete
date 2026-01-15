@@ -14,7 +14,7 @@ def read_root():
 
 
 @app.get("/hello")
-def hello_world():
+def read_root():
     return {"greeting": "Hello World"}
 
 
